@@ -1,0 +1,12 @@
+body {
+  background-color: #282c34;
+  color: #fff;
+  margin: 20px;
+}
+
+/* Options.js */
+img {
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
