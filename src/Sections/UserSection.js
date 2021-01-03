@@ -7,17 +7,16 @@ const UserSection = () => {
   const Context = useContext(MainContext);
   const [result, setResult] = useState("-");
 
-  useEffect(() => {
-    // result = result;
-    if (Context.winnerName === "User") {
-      Context.setUserScore(Context.userScore + 1);
-    } else if (Context.winnerName === "Computer") {
-      Context.setCompScore(Context.compScore + 1);
-    }
-    // console.log(result);
-  }, [result]);
+  // useEffect(() => {
+  //   if (Context.winnerName === "User") {
+  //     Context.setUserScore(Context.userScore + 1);
+  //   } else if (Context.winnerName === "Computer") {
+  //     Context.setCompScore(Context.compScore + 1);
+  //   }
+  // }, [result]);
 
   const handleClick = (userOptName) => {
+    // console.log("Clicked");
     const compID = Math.floor(Math.random() * 3) + 1;
     let compOptName = "";
     switch (compID) {
@@ -39,47 +38,42 @@ const UserSection = () => {
     if (userOptName === compOptName) {
       setResult(`User - ${userOptName} and Comp - ${compOptName}`);
       Context.setWinnerName("Tie");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
     } else if (userOptName === "ROCK" && compOptName === "SCISSOR") {
       setResult(`User - ${userOptName} and Computer - ${compOptName} `);
       Context.setWinnerName("User");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
+      Context.setUserScore(Context.userScore + 1);
     } else if (userOptName === "ROCK" && compOptName === "PAPER") {
       setResult(`User - ${userOptName} and Computer - ${compOptName}  `);
       Context.setWinnerName("Computer");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
+      Context.setCompScore(Context.compScore + 1);
     } else if (userOptName === "PAPER" && compOptName === "ROCK") {
       setResult(`User - ${userOptName} and Computer - ${compOptName} `);
       Context.setWinnerName("User");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
+      Context.setUserScore(Context.userScore + 1);
     } else if (userOptName === "PAPER" && compOptName === "SCISSOR") {
       setResult(`User - ${userOptName} and Computer - ${compOptName}  `);
       Context.setWinnerName("Computer");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
+      Context.setCompScore(Context.compScore + 1);
     } else if (userOptName === "SCISSOR" && compOptName === "PAPER") {
       setResult(`User - ${userOptName} and Computer - ${compOptName} `);
       Context.setWinnerName("User");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
+      Context.setUserScore(Context.userScore + 1);
     } else if (userOptName === "SCISSOR" && compOptName === "ROCK") {
       setResult(`User - ${userOptName} and Computer - ${compOptName}  `);
       Context.setWinnerName("Computer");
-      Context.setUserSelectedOption(`${userOptName}`);
-      Context.setCompSelectedOption(`${compOptName}`);
+      Context.setCompScore(Context.compScore + 1);
     } else {
       Context.setWinnerName("-");
     }
+
+    Context.setUserSelectedOption(`${userOptName}`);
+    Context.setCompSelectedOption(`${compOptName}`);
   };
 
   const [userImage, setUserImage] = useState(null);
   return (
     <div className="user-section-container">
-      <h4>User Section</h4>
+      <h4>User</h4>
       <div className="user-section">
         <div className="user-section-images">
           <img

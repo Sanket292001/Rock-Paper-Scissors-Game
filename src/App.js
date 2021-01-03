@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //Context
 import { MainContext } from "./Context/MainContext";
@@ -20,6 +20,18 @@ function App() {
   const [compScore, setCompScore] = useState(0);
   const [userScore, setUserScore] = useState(0);
 
+  useEffect(() => {
+    if (
+      localStorage.getItem("UserScore") &&
+      localStorage.getItem("CompScore")
+    ) {
+      setUserScore(parseInt(localStorage.getItem("UserScore")));
+      setCompScore(parseInt(localStorage.getItem("CompScore")));
+      console.log("Local Storage Present");
+    } else {
+      console.log("Local Storage Not Present");
+    }
+  }, []);
   return (
     <div>
       <MainContext.Provider
