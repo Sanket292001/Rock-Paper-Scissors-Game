@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 //Context
 import { MainContext } from "./Context/MainContext";
@@ -19,8 +19,7 @@ function App() {
   const [compSelectedOption, setCompSelectedOption] = useState("-");
   const [compScore, setCompScore] = useState(0);
   const [userScore, setUserScore] = useState(0);
-  const [userSelectedImage, setUserSelectedImage] = useState(null);
-  const [compSelectedImage, setCompSelectedImage] = useState(null);
+
   return (
     <div>
       <MainContext.Provider

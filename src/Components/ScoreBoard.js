@@ -1,27 +1,24 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 
 // Context
 import { MainContext } from "../Context/MainContext";
 
-// reactstrap Components
-import { Container, Row, Col } from "reactstrap";
-
 const ScoreBoard = () => {
   const Context = useContext(MainContext);
   return (
-    <Container fluid className="text-center" style={{ height: `25%` }}>
-      <h1 className="mb-4">Score Board</h1>
-      <Row className="text-center">
-        <Col xs={4} className="offset-2">
+    <div style={{ textAlign: "center" }}>
+      <h1 className="mb-4 scoreboard-header">Score Board</h1>
+      <div className="scoreboard-score-container">
+        <div className="user-score">
           <h3 className="mb2">User</h3>
           <h1>{Context.userScore}</h1>
-        </Col>
-        <Col xs={4}>
+        </div>
+        <div className="computer-score">
           <h3>Computer</h3>
           <h1>{Context.compScore}</h1>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 

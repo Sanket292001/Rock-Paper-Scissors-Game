@@ -1,12 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #282c34;
   color: #fff;
   margin: 20px;
 }
+/* Scoreboard.js */
+.scoreboard-score-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
+.scoreboard-header {
+  padding-top: 10px;
+}
 /* Options.js */
-img {
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.options-main-text {
+  margin: 0px 0px 10px 0px;
+}
+/* User Section */
+
+.user-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.user-section-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-section-images img {
+  width: 100px;
+  height: 80px;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.user-section-main-image {
+  /* background-color: #e1e1e1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-section-main-image img {
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Computer Section */
+.computer-section {
+  width: 100%;
+  height: 89.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.computer-section-main-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.computer-section-main-image img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  img {
+    width: 80px;
+    height: 60px;
+  }
+  .selected-image {
+    width: 250px;
+    height: 150px;
+  }
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .user-section-main-image img {
+    width: 80%;
+    height: 80%;
+  }
+  .computer-section-main-image img {
+    width: 60%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .user-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+  }
+  .user-section-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .user-section-images img {
+    width: 80px;
+    height: 60px;
+  }
+  .user-section-main-image img {
+    width: 100%;
+    height: 80%;
+  }
+  .computer-section-main-image img {
+    width: 100%;
+    height: 50%;
+  }
+  .scoreboard-header {
+    font-size: 30px;
+  }
+  .options-main-text {
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .scoreboard-score-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .computer-section {
+    height: 80%;
+  }
+  .computer-section-main-image {
+    margin-top: -50%;
+    height: 100%;
+  }
 }
