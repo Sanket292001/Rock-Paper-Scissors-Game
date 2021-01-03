@@ -1,11 +1,10 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 
 // MainContext
 import { MainContext } from "../Context/MainContext";
 
 const UserSection = () => {
   const Context = useContext(MainContext);
-  const [result, setResult] = useState("-");
 
   // useEffect(() => {
   //   if (Context.winnerName === "User") {
@@ -36,30 +35,23 @@ const UserSection = () => {
     // console.log(`User - ${userOptName} and Comp - ${compOptName}`);
 
     if (userOptName === compOptName) {
-      setResult(`User - ${userOptName} and Comp - ${compOptName}`);
       Context.setWinnerName("Tie");
     } else if (userOptName === "ROCK" && compOptName === "SCISSOR") {
-      setResult(`User - ${userOptName} and Computer - ${compOptName} `);
       Context.setWinnerName("User");
       Context.setUserScore(Context.userScore + 1);
     } else if (userOptName === "ROCK" && compOptName === "PAPER") {
-      setResult(`User - ${userOptName} and Computer - ${compOptName}  `);
       Context.setWinnerName("Computer");
       Context.setCompScore(Context.compScore + 1);
     } else if (userOptName === "PAPER" && compOptName === "ROCK") {
-      setResult(`User - ${userOptName} and Computer - ${compOptName} `);
       Context.setWinnerName("User");
       Context.setUserScore(Context.userScore + 1);
     } else if (userOptName === "PAPER" && compOptName === "SCISSOR") {
-      setResult(`User - ${userOptName} and Computer - ${compOptName}  `);
       Context.setWinnerName("Computer");
       Context.setCompScore(Context.compScore + 1);
     } else if (userOptName === "SCISSOR" && compOptName === "PAPER") {
-      setResult(`User - ${userOptName} and Computer - ${compOptName} `);
       Context.setWinnerName("User");
       Context.setUserScore(Context.userScore + 1);
     } else if (userOptName === "SCISSOR" && compOptName === "ROCK") {
-      setResult(`User - ${userOptName} and Computer - ${compOptName}  `);
       Context.setWinnerName("Computer");
       Context.setCompScore(Context.compScore + 1);
     } else {
@@ -99,7 +91,7 @@ const UserSection = () => {
             height="25%"
           />
           <img
-            src={process.env.PUBLIC_URL + "/Images/scissor.jpg"}
+            src={process.env.PUBLIC_URL + "/Images/scissor_new.jpg"}
             name="SCISSOR"
             alt="scissor_image"
             onClick={(e) => {
