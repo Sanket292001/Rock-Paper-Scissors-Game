@@ -11,18 +11,36 @@ const HistorySection = () => {
       if (localStorage.getItem("HistoryList")) {
         localStorage.removeItem("HistoryList");
         setUserScoreHistoryList([]);
-        return toast("History Cleared Successfully..!", { type: "success" });
+        return toast("History Cleared Successfully..!", {
+          type: "success",
+          position: toast.POSITION.BOTTOM_RIGHT,
+        });
       } else {
-        return toast("History Not Present..!", { type: "info" });
+        return toast("History Not Present..!", {
+          type: "warning",
+          position: toast.POSITION.BOTTOM_RIGHT,
+        });
       }
     } catch (err) {
-      return toast("History Cleared Unsuccessfully..!", { type: "error" });
+      return toast("History Cleared Unsuccessfully..!", {
+        type: "error",
+        position: toast.POSITION.BOTTOM_RIGHT,
+      });
     }
   };
 
-  // console.log(userScoreHistoryList);
+  const handleCloseButton = () => {
+    const body = document.querySelector("body");
+    const historyContainer = document.querySelector(".history-container");
+    historyContainer.style.left = "100%";
+    body.style.overflow = "auto";
+  };
   return (
     <div className="history-container">
+      <i
+        onClick={handleCloseButton}
+        className="fas fa-times history-close-btn"
+      ></i>
       <div className="history-heading">
         <span>History</span>
         <i

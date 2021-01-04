@@ -6,7 +6,7 @@ import { MainContext } from "./Context/MainContext";
 // Components
 import Options from "./Components/Options";
 import Header from "./Components/Header";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,6 +22,7 @@ function App() {
   const [compScore, setCompScore] = useState(0);
   const [userScore, setUserScore] = useState(0);
   const [userScoreHistoryList, setUserScoreHistoryList] = useState([]);
+  const [positionVal, setPositionVal] = useState(toast.POSITION.TOP_RIGHT);
 
   useEffect(() => {
     if (
@@ -43,6 +44,17 @@ function App() {
     }
   }, []);
 
+  // resizeObserver
+  const resizeObserver = new ResizeObserver(() => {
+    if (window.innerWidth < 700) {
+      setPositionVal(toast.POSITION.BOTTOM_RIGHT);
+    } else {
+      setPositionVal(toast.POSITION.TOP_RIGHT);
+    }
+  });
+
+  resizeObserver.observe(document.querySelector("body"));
+
   return (
     <div>
       <MainContext.Provider
@@ -53,6 +65,7 @@ function App() {
           compScore,
           userScore,
           userScoreHistoryList,
+          positionVal,
           setWinnerName,
           setUserSelectedOption,
           setCompSelectedOption,

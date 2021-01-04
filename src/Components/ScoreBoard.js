@@ -27,25 +27,60 @@ const ScoreBoard = () => {
         JSON.stringify([...Context.userScoreHistoryList, data])
       );
 
-      return toast("Score Saved Successfully..!", { type: "success" });
+      return toast("Score Saved Successfully..!", {
+        type: "success",
+        position: Context.positionVal,
+      });
     } catch (err) {
-      return toast("Score Saved unsuccessfully..!", { type: "err" });
+      return toast("Score Saved unsuccessfully..!", {
+        type: "err",
+        position: Context.positionVal,
+      });
     }
   };
 
   const handleReset = (e) => {
     try {
-      localStorage.removeItem("UserScore");
-      localStorage.removeItem("CompScore");
-
-      Context.setWinnerName("Please select ROCK, PAPER or SCISSOR..");
-      Context.setUserScore(0);
-      Context.setCompScore(0);
-
-      return toast("Score Removed Successfully..!", { type: "success" });
+      if (
+        localStorage.getItem("UserScore") &&
+        localStorage.getItem("CompScore")
+      ) {
+        localStorage.removeItem("UserScore");
+        localStorage.removeItem("CompScore");
+        Context.setWinnerName("Please select ROCK, PAPER or SCISSOR..");
+        Context.setUserScore(0);
+        Context.setCompScore(0);
+        return toast("Score Reset Successfully..!", {
+          type: "success",
+          position: Context.positionVal,
+        });
+      } else if (Context.userScore !== 0 || Context.compScore !== 0) {
+        Context.setWinnerName("Please select ROCK, PAPER or SCISSOR..");
+        Context.setUserScore(0);
+        Context.setCompScore(0);
+        return toast("Score Reset Successfully..!", {
+          type: "success",
+          position: Context.positionVal,
+        });
+      } else {
+        return toast("No Score To Reset..!", {
+          type: "warning",
+          position: Context.positionVal,
+        });
+      }
     } catch (err) {
-      return toast("Score Removed Unsuccessfully..!", { type: "error" });
+      return toast("Score Reset Unsuccessfully..!", {
+        type: "error",
+        position: Context.positionVal,
+      });
     }
+  };
+
+  const handleHistory = (e) => {
+    const body = document.querySelector("body");
+    const historyContainer = document.querySelector(".history-container");
+    historyContainer.style.left = "0%";
+    body.style.overflow = "hidden";
   };
 
   return (
@@ -64,6 +99,7 @@ const ScoreBoard = () => {
       <div className="scoreboard-footer">
         <button onClick={(e) => handleSave(e)}>Save</button>
         <button onClick={(e) => handleReset(e)}>Reset</button>
+        <button onClick={(e) => handleHistory(e)}>History</button>
       </div>
     </div>
   );

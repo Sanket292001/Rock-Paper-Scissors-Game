@@ -11,6 +11,9 @@
   --resetButtonColor: #db0000;
   --resetButtonHoverColor: #a80000;
 
+  --historyButtonColor: #0089be;
+  --historyButtonHoverColor: #007bac;
+
   --userOptionImageShadowColor: #000000;
 
   --historyHeadingBackgroundColor: #f5f5f5;
@@ -22,12 +25,13 @@
   padding: 0px;
   box-sizing: border-box;
   user-select: none;
+  /* overflow-x: hidden; */
 }
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--mainBackgroundColor);
   color: var(--mainTextColor);
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .header {
@@ -74,6 +78,13 @@ body {
 }
 .scoreboard-footer button:nth-child(2):hover {
   background-color: var(--resetButtonHoverColor);
+}
+
+.scoreboard-footer button:nth-child(3) {
+  background-color: var(--historyButtonColor);
+}
+.scoreboard-footer button:nth-child(3):hover {
+  background-color: var(--historyButtonHoverColor);
 }
 
 .scoreboard-header-text {
@@ -154,7 +165,22 @@ body {
 /* History */
 .history-container {
   width: 100%;
-  margin-top: 20px;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  transition: all 0.7s ease;
+}
+
+.history-close-btn {
+  color: #000;
+  font-size: 20px;
+  margin-left: 95%;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 .history-heading {
   width: 100%;
@@ -166,9 +192,13 @@ body {
   padding: 10px 20px;
   margin-bottom: 30px;
 }
+
 .history-heading span {
   flex: 1;
   font-size: 20px;
+}
+.history-heading:nth-child(3) {
+  width: 70px;
 }
 
 /* Individual History */
@@ -176,7 +206,7 @@ body {
   width: 90%;
   margin: auto auto;
   margin-top: 10px;
-  color: #fff;
+  color: #000;
 }
 .history-table td,
 .history-table th {
