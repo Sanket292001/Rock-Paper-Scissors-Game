@@ -149,7 +149,7 @@ body {
 .computer-section {
   width: 70%;
   margin: auto auto;
-  margin-top: 15px;
+  margin-top: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +165,7 @@ body {
 /* History */
 .history-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   background-color: #fff;
   top: 0;
