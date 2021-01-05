@@ -21,7 +21,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### Score Board:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Score%20Board.PNG?token=AMQRRX35DOWDGB7D26NSCEK76QFSQ)
+![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Score%20Board.PNG?token=AMQRRX2NKR7Y5MZOXMF3DBK76QGK2)
 
 - **Save Button** - Save your current score and also add score to history
 - **Reset** - Reset your score
@@ -31,7 +31,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### Playing Area:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Area.PNG?token=AMQRRXZS7Y6M33HFRDZ4STK76QFUC)
+![Playing Area](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Area.PNG?token=AMQRRX735SVY7VL33Z4JGQ276QGMU)
 
 - **User (Section)** - Rock, Paper and Scissors image present user have to select any one of it. After selection, selected image will display into user (section) empty block.
 
@@ -41,7 +41,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### History Section:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/History.PNG?token=AMQRRXZW4GAW75CI4GVIZ6276QFVS)
+![History Section](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/History.PNG?token=AMQRRXYSNTQQ4U33RWY2YAC76QGOC)
 
 - **Table** - Display previous history scores with date.
 
