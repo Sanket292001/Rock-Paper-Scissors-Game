@@ -48,3 +48,9 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 - **Clear All** - Clears all history.
 
 - **X (close)** - Closes history section.
+
+---
+
+## Image while Playing:
+
+![Image While Playing](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Game.PNG?token=AMQRRXZQUL2APTKLQS4DFVS76QGDK)
