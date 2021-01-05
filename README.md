@@ -2,7 +2,7 @@
 
 ---
 
-![Webpage Image](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Webpage.PNG?token=AMQRRXZKYCYEKB64K4C5QIC76QDDK)
+![Webpage Image](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Webpage.PNG?token=AMQRRX7W5KIPGOH5GWVCPY276QFPI)
 
 This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally responsive so that you can play this game on any device.
 
@@ -21,7 +21,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### Score Board:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Score%20Board.PNG?token=AMQRRX6H5OWW4DFKCNKM7NS76QDE6)
+![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Score%20Board.PNG?token=AMQRRX35DOWDGB7D26NSCEK76QFSQ)
 
 - **Save Button** - Save your current score and also add score to history
 - **Reset** - Reset your score
@@ -31,7 +31,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### Playing Area:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Area.PNG?token=AMQRRXZ7FFVX43TXEA6TB4276QDGI)
+![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Area.PNG?token=AMQRRXZS7Y6M33HFRDZ4STK76QFUC)
 
 - **User (Section)** - Rock, Paper and Scissors image present user have to select any one of it. After selection, selected image will display into user (section) empty block.
 
@@ -41,7 +41,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### History Section:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/History.PNG?token=AMQRRX7D6B7JIQB676UBJUK76QDNU)
+![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/History.PNG?token=AMQRRXZW4GAW75CI4GVIZ6276QFVS)
 
 - **Table** - Display previous history scores with date.
 
