@@ -2,7 +2,7 @@
 
 ---
 
-![Webpage Image](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Webpage.PNG?token=AMQRRX7W5KIPGOH5GWVCPY276QFPI)
+![Webpage Image](https://github.com/Sanket292001/Rock-Paper-Scissors-Game/blob/main/Website%20Images/Webpage.PNG?raw=true)
 
 This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally responsive so that you can play this game on any device.
 
@@ -21,7 +21,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### Score Board:
 
-![Score Board](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Score%20Board.PNG?token=AMQRRX2NKR7Y5MZOXMF3DBK76QGK2)
+![Score Board](https://github.com/Sanket292001/Rock-Paper-Scissors-Game/blob/main/Website%20Images/Score%20Board.PNG?raw=true)
 
 - **Save Button** - Save your current score and also add score to history
 - **Reset** - Reset your score
@@ -31,7 +31,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### Playing Area:
 
-![Playing Area](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Area.PNG?token=AMQRRX735SVY7VL33Z4JGQ276QGMU)
+![Playing Area](https://github.com/Sanket292001/Rock-Paper-Scissors-Game/blob/main/Website%20Images/Playing%20Area.PNG?raw=true)
 
 - **User (Section)** - Rock, Paper and Scissors image present user have to select any one of it. After selection, selected image will display into user (section) empty block.
 
@@ -41,7 +41,7 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ### History Section:
 
-![History Section](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/History.PNG?token=AMQRRXYSNTQQ4U33RWY2YAC76QGOC)
+![History Section](https://github.com/Sanket292001/Rock-Paper-Scissors-Game/blob/main/Website%20Images/History.PNG?raw=true)
 
 - **Table** - Display previous history scores with date.
 
@@ -51,6 +51,6 @@ This is **Rock Paper Scissors** game developed in React JS. It's GUI is totally 
 
 ---
 
-## Image while Playing:
+## Image while Playing Game:
 
-![Image While Playing](https://raw.githubusercontent.com/Sanket292001/Rock-Paper-Scissors-Game/main/Website%20Images/Playing%20Game.PNG?token=AMQRRXZQUL2APTKLQS4DFVS76QGDK)
+![Image While Playing](https://github.com/Sanket292001/Rock-Paper-Scissors-Game/blob/main/Website%20Images/Playing%20Game.PNG?raw=true)
