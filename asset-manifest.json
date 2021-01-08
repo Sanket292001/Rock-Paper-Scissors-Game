@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Rock-Paper-Scissors-Game/static/css/main.f20235ba.chunk.css",
+    "main.js": "/Rock-Paper-Scissors-Game/static/js/main.e9fb2d38.chunk.js",
+    "main.js.map": "/Rock-Paper-Scissors-Game/static/js/main.e9fb2d38.chunk.js.map",
+    "runtime-main.js": "/Rock-Paper-Scissors-Game/static/js/runtime-main.9df8edbf.js",
+    "runtime-main.js.map": "/Rock-Paper-Scissors-Game/static/js/runtime-main.9df8edbf.js.map",
+    "static/css/2.37865b2a.chunk.css": "/Rock-Paper-Scissors-Game/static/css/2.37865b2a.chunk.css",
+    "static/js/2.b75965d3.chunk.js": "/Rock-Paper-Scissors-Game/static/js/2.b75965d3.chunk.js",
+    "static/js/2.b75965d3.chunk.js.map": "/Rock-Paper-Scissors-Game/static/js/2.b75965d3.chunk.js.map",
+    "index.html": "/Rock-Paper-Scissors-Game/index.html",
+    "precache-manifest.ef75a8bc2f7adfe5f32879680d51f0b6.js": "/Rock-Paper-Scissors-Game/precache-manifest.ef75a8bc2f7adfe5f32879680d51f0b6.js",
+    "service-worker.js": "/Rock-Paper-Scissors-Game/service-worker.js",
+    "static/css/2.37865b2a.chunk.css.map": "/Rock-Paper-Scissors-Game/static/css/2.37865b2a.chunk.css.map",
+    "static/css/main.f20235ba.chunk.css.map": "/Rock-Paper-Scissors-Game/static/css/main.f20235ba.chunk.css.map",
+    "static/js/2.b75965d3.chunk.js.LICENSE.txt": "/Rock-Paper-Scissors-Game/static/js/2.b75965d3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9df8edbf.js",
+    "static/css/2.37865b2a.chunk.css",
+    "static/js/2.b75965d3.chunk.js",
+    "static/css/main.f20235ba.chunk.css",
+    "static/js/main.e9fb2d38.chunk.js"
+  ]
+}
